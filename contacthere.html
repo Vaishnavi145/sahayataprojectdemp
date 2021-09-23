@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+<title>contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<style>
+*
+{
+margin:0;
+padding:0;
+font-family:"montserrat",sans-serif;
+box-sizing:border-box;
+}
+body
+{
+background-image:url(phone2.jpg);
+background-size:cover;
+background-attachment:fixed;
+background-repeat:no-repeat;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0.7;
+}
+.contact-info
+{
+display:flex;
+width:100%;
+max-width:1200px;
+align-items:center;
+justify-content:center;
+padding: 0 20px;
+}
+.card
+{
+background:#2f3542;
+padding:0 30px;
+margin:0 10px;
+width:600px;
+height:400px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+color:#fff;
+align-items:center;
+cursor:pointer
+}
+.card-icon
+{
+font-size:28px;
+background:#ff6348;
+width:80px;
+height:60px;
+text-align:center;
+line-height:60px !important;
+border-radius:50%;
+transition:0.3s linear;
+}
+.card:hover .card-icon
+{
+background:none;
+color:#ff6348;
+transform:scale(1.6);
+}
+.card p
+{
+margin-top:20px;
+font-weight:300;
+letter-spacing:2px;
+max-height:0;
+opacity:0;
+transition:0.3s linear;
+}
+.card:hover p
+{
+max-height:40px;
+opacity:1;
+}
+@media screen and (max-width:800px)
+{
+.contact-info
+{
+flex-direction:column;
+}
+.card
+{
+width:300%;
+max-width:1000px;
+margin:5px 0;
+}
+label.logo{
+	color:white;
+	font-size:35px;
+	line-height:80px;
+	padding:0 100px;
+	font-weight:bold;
+}
+nav{
+background:#E74C3C;
+border-radius:25px;
+height:20%;
+width:100%;
+}
+
+nav ul{
+	float:right;
+	margin-right:20px;
+}
+nav ul li{
+	display:inline-block;
+	line-height:80px;
+	margin:0 5px;
+}
+nav ul li a{
+	color:white;
+	font-size:18px;
+	padding:7px 13px;
+	border-radius:3px;
+	text-transform:uppercase;
+}
+a.active,a:hover{
+	background:#07523e;
+	transition:0.5s;
+}
+.checkbtn{
+font-size:30px;
+color:white;
+float:right;
+line-height:80px;
+margin-right:40px;
+cursor:pointer;
+display:none;	
+}
+#check{
+	display:none;
+}
+@media (max-width:952px){
+	label.logo{
+		font-size:30px;
+		padding-left:50px;
+	}
+	nav ul l a{
+		font-size:16px;
+	}
+}
+@media (max-width:858px){
+	.checkbtn{
+		display:block;
+	}
+	
+	nav ul li{
+		display:block;
+		margin:50px 0;
+		line-height:30px;
+	}
+	nav ul li a{
+		font-size:20px;
+	}
+	a:hover,a.active{
+		background:none;
+		color:#0082e6;
+	}
+	#check:checked~ul{
+		left:0;
+	}
+}
+
+}
+</style>
+</head>
+<body>
+    <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+		<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Donate</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="donate2.html">Donate</a></li>
+				<li><a href="contacthere.html">contact</a></li>
+				<li><a class="active" href="event.html">EVENTS</a></li>
+
+
+				
+			</ul>
+	</nav>
+
+
+<div class="contact-info">
+
+<div class="card">
+<i class="card-icon far fa-envelope"></i>
+<p>premsaiakash@gmail.com</p>
+</div>
+
+<div class="card">
+<i class="card-icon fas fa-phone"></i>
+<p>+1234567890</p>
+</div>
+
+<div class="card">
+<i class="card-icon fas fa-map-marker-alt"></i>
+<p>INDIA</p>
+</div>
+
+</div>
+</body>
+</html>
